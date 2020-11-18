@@ -48,7 +48,7 @@ public Action OnLogAction(Handle source, Identity ident, int client, int target,
 		return Plugin_Continue;
 	
 	char query[1024], authid[32], name[64], hostname[64], Time[64], error[255];
-	GetClientAuthId(client, AuthId_Steam64, authid, sizeof(authid));
+	GetClientAuthId(client, AuthId_SteamID64, authid, sizeof(authid));
 	GetClientName(client, name, sizeof(name));
 	GetConVarString(FindConVar("hostname"), hostname, sizeof(hostname));
 	FormatTime(Time, sizeof(Time), "%F %R", GetTime());
