@@ -22,10 +22,7 @@ public Plugin myinfo =
 
 public void OnPluginStart()
 {
-	if (hDatabase != null)
-	{
-		delete hDatabase;
-	}
+	delete hDatabase;
 	
 	char error[255];
 	if (SQL_CheckConfig("logging"))
